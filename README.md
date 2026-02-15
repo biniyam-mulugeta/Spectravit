@@ -8,19 +8,35 @@ This repository contains a clean, reproducible implementation of **SpectraViT** 
 - `configs/`: Hyperparameter configurations.
 - `outputs/`: Training logs and checkpoints.
 
-## 1. Environment Setup
-Create a conda environment or install requirements directly:
+## 1. Getting Started
+
+### Prerequisites
+- Python 3.8+
+- Conda (optional, but recommended)
+
+### Installation
+1.  **Clone the repository:**
+    ```bash
+    git clone https://github.com/biniyam-mulugeta/Spectravit.git
+    cd Spectravit
+    ```
+
+2.  **Install dependencies:**
+    ```bash
+    pip install -r requirements.txt
+    ```
+
+### Running the Tests
+To verify the installation and that everything is working as expected, run the smoke tests:
 ```bash
-pip install -r requirements.txt
+python scripts/train_crc.py --dry_run
+```
+Or run the unit tests:
+```bash
+python -m unittest discover tests
 ```
 
-## 2. Dataset Paths
-Ensure your `configs/default.yaml` points to the correct dataset.
-Default assumes:
-- Train/Val: `/home/jovyan/work/Datasets/NCT-CRC-HE/NCT-CRC-HE-100K-NONORM/` (Update this in yaml!)
-- External: `CRC-VAL-HE-7K`
-
-## 3. Usage Guidelines
+## 2. Usage Guidelines
 
 ### A. Train on CRC-100K
 ```bash
@@ -58,12 +74,18 @@ python scripts/predict.py --config configs/default.yaml --ckpt outputs/spectravi
 ```
 Outputs a CSV with class probabilities to `inference_outputs/predictions.csv`.
 
-## 4. Smoke Tests (Verification)
-To verify the wiring without full training, use the `--dry_run` flag:
-```bash
-python scripts/train_crc.py --dry_run
-```
-Or run the unit tests:
-```bash
-python -m unittest discover tests
-```
+## 3. Contributing
+Contributions are welcome! Please feel free to submit a pull request or open an issue to report a bug or suggest a new feature.
+
+### Pull Requests
+1.  Fork the repository.
+2.  Create a new branch (`git checkout -b feature/your-feature-name`).
+3.  Make your changes and commit them (`git commit -m 'Add some feature'`).
+4.  Push to the branch (`git push origin feature/your-feature-name`).
+5.  Open a pull request.
+
+### Reporting Bugs
+Please open an issue with a clear description of the bug, including steps to reproduce it.
+
+## 4. License
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.

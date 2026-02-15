@@ -1,0 +1,22 @@
+Test Accuracy: 0.9966
+
+                         precision    recall  f1-score   support
+
+          breast_benign     0.9900    0.9950    0.9925       400
+       breast_malignant     0.9950    0.9900    0.9925       400
+              colon_aca     1.0000    1.0000    1.0000       400
+                colon_n     1.0000    1.0000    1.0000       400
+               lung_aca     0.9975    1.0000    0.9988       400
+                 lung_n     1.0000    1.0000    1.0000       400
+               lung_scc     1.0000    0.9975    0.9987       400
+oral_normal_oral_cavity     0.9826    0.9875    0.9850       400
+              oral_oscc     0.9874    0.9825    0.9850       400
+     ovarian_clear_cell     1.0000    1.0000    1.0000       400
+      ovarian_endometri     1.0000    1.0000    1.0000       400
+       ovarian_mucinous     1.0000    1.0000    1.0000       400
+  ovarian_non_cancerous     1.0000    1.0000    1.0000       400
+         ovarian_serous     1.0000    1.0000    1.0000       400
+
+               accuracy                         0.9966      5600
+              macro avg     0.9966    0.9966    0.9966      5600
+           weighted avg     0.9966    0.9966    0.9966      5600

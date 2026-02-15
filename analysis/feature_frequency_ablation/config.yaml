@@ -1,0 +1,12 @@
+experiment:
+  num_bands: 5
+  samples_per_class: 100
+  batch_size: 32
+  corruption:
+    type: "gaussian_blur"
+    severity: 5
+
+paths:
+  ckpt_path: "/home/biniyam/spectravit_reproduction/outputs/spectravit_run_01/best_model.pth" # Update this!
+  data_dir: "/home/biniyam/Datasets/NCT-CRC-HE/CRC-VAL-HE-7K/" # Update this!
+  output_dir: "outputs/"

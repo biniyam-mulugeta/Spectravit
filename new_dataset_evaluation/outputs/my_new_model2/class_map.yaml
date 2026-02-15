@@ -1,0 +1,14 @@
+breast_benign: 0
+breast_malignant: 1
+colon_aca: 2
+colon_n: 3
+lung_aca: 4
+lung_n: 5
+lung_scc: 6
+oral_normal_oral_cavity: 7
+oral_oscc: 8
+ovarian_clear_cell: 9
+ovarian_endometri: 10
+ovarian_mucinous: 11
+ovarian_non_cancerous: 12
+ovarian_serous: 13
